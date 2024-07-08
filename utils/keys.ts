@@ -1,7 +1,7 @@
 import {generateKeyPair} from 'crypto'
 
 
-async function generateSSHKeyPair() {
+export async function generateSSHKeyPair() {
 const passphrase = ''
 return new Promise((resolve,reject)=>{ 
     generateKeyPair('rsa', {
@@ -27,6 +27,9 @@ return new Promise((resolve,reject)=>{
     });
 
 })}
+// test
+/*
 generateSSHKeyPair().then((data)=>{
 console.log(data)
 })
+*/
