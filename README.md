@@ -2,6 +2,15 @@
 
 ## This project is a Git hosting service, similar to GitHub, providing a robust ecosystem and tools for managing repositories, SSH keys, and user authentication.
 
+### Tech Stack 
+ - golang
+ - Typescript
+ - ejs | Mustash ( can be changed accordingly )
+ - shell
+ - libsql | turso | sqlite
+ - SSO | OAuth
+ - etc..
+
 ```mermaid
 
 graph TD
