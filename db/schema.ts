@@ -1,4 +1,3 @@
-import { response } from 'express'
 import {turso} from './connector'
 export class Table{
 
@@ -14,9 +13,10 @@ export class Table{
 		const sql = `CREATE TABLE ${user_repo}repo(commit_date DATE,commit_message VARCHAR , author VARCHAR ,files_changed NUMERIC , added NUMERIC , removed NUMERIC)`
 		await turso.execute(sql)
 		.then((response)=>{
-			console.log(response)
+			console.log(response.toJSON())
 		})
 	}
+	
 }
 
 

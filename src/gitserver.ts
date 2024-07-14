@@ -1,4 +1,6 @@
-export async function publicKey(key:string) {
+export default class gitServer{
+
+async publicKey(key:string) {
     const url = process.env.GIT_SERVER_PUBLIC_KEY || " ";
 
     try {
@@ -21,4 +23,5 @@ export async function publicKey(key:string) {
     } catch (error) {
         console.error('Error:', error);
     }
-} 
+}
+}
